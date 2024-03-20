@@ -157,3 +157,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function playVideo() {
+  var videoSelect = document.getElementById("videoSelect");
+  var selectedVideo = videoSelect.value;
+  var videoPlayer = document.getElementById("videoPlayer");
+  videoPlayer.src = selectedVideo;
+  videoPlayer.play();
+}
